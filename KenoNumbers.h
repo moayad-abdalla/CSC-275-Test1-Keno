@@ -7,6 +7,7 @@ private:
     // Encapsulation: Numbers stored Privately
     std::vector<int> m_numbers;
 
+    
 public:
     void generateNumbers();
     std::vector<int> getKenoNumbers();
