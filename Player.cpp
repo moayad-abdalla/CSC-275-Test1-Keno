@@ -20,13 +20,13 @@ void Player::inputPlayerNumbers() {
             std::cin.clear();
             std::cin.ignore(10000, '\n');
 
-            std::cout << "Invalid number. Try again.\n";
+            std::cout << "Invalid data input! Try again. ";
             continue;
         }
 
         if (number < 1 || number > 80) {
 
-            std::cout << "Number must be between 1 and 80.\n";
+            std::cout << number << " is out of range! Try again. ";
             continue;
         }
         bool alreadyPicked = false;
@@ -37,7 +37,7 @@ void Player::inputPlayerNumbers() {
         }
 
         if (alreadyPicked) {
-            std::cout << "You already picked that number. Try again.\n";
+            std::cout << number << " was already picked! Try again. ";
 
         }
         else {

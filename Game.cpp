@@ -36,7 +36,7 @@ void Game::displayResults() {
 
     // Abstraction: game calls methods from player
 
-    std::cout << "\nResults\n";
+    std::cout << "\n----------------------------------Results----------------------------------\n";
 
 
     m_keno.printKenoNumbers();
@@ -90,7 +90,7 @@ void Game::playGame() {
         m_keno.clearKenoNumbers();
         m_matches.clear();
 
-        std::cout << "\nTo play Keno, select 10 unique numbers from 1 to 80.\n";
+        std::cout << "\nTo play Keno, select 10 unique (no repeats) numbers in the range of 1-80.\n\n";
         std::cout << "Let's Play Keno!\n\n";
 
         m_player.inputPlayerNumbers();
